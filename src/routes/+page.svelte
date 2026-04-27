@@ -1,14 +1,10 @@
 <script>
   import ArticleHeader from '$lib/components/Article/ArticleHeader.svelte';
   import Map from '$lib/components/Maps/Map.svelte';
-  import MapLayer from '$lib/components/Maps/MapLayer.svelte';
-  import Geocoder from '$lib/components/Maps/Geocoder.svelte';
 
   let { data } = $props();
   const greatTrees = data.greatTrees;
-  let longitude = $state(-74.0);
-  let latitude = $state(40.7);
-  let zoom = $state(9.5);
+  console.log(greatTrees);
 </script>
 
 <div class="container">
